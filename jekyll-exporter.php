@@ -359,7 +359,7 @@ class Jekyll_Export {
 
     $upload_dir = wp_upload_dir();
     $source = $upload_dir['basedir'];
-    $dest = $this->dir . str_replace( trailingslashit( get_site_url() ), '', $upload_dir['baseurl'] );
+    $dest = $this->dir . str_replace( trailingslashit( 'https://liquidthink.net'), '', $upload_dir['baseurl'] );
     $this->copy_recursive( $source, $dest );
 
   }
